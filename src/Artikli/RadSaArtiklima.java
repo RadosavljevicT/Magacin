@@ -13,13 +13,15 @@ public class RadSaArtiklima implements MagacinInterfejs {
 	private LinkedList <KancelarijskiMaterijal> kancelarijskiMaterijali = new LinkedList <KancelarijskiMaterijal>();
 	private LinkedList <KucnaHemija> kucneHemije = new LinkedList <KucnaHemija> ();
 
-	
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
 		
 		if (knjiga == null)
 			throw new RuntimeException ("Knjiga ne sme biti null");
 		
+
+		else if (knjige.contains(knjiga))
+			knjiga.setKolicina(knjiga.getKolicina() +1);
 		
 		else knjige.add(knjiga);
 
@@ -32,19 +34,22 @@ public class RadSaArtiklima implements MagacinInterfejs {
 		if (kancelarijskiMaterijal == null)
 			throw new RuntimeException ("Kancelarijski materijal ne sme biti null");
 		
-		
+
+		else if (kancelarijskiMaterijali.contains(kancelarijskiMaterijal))
+			kancelarijskiMaterijal.setKolicina(kancelarijskiMaterijal.getKolicina() +1);
 		
 		else kancelarijskiMaterijali.add(kancelarijskiMaterijal);
-
 
 	}
 
 	@Override
 	public void dodajKucnuHemiju(KucnaHemija kucnaHemija) {
 		
+
+		if (kucnaHemija == null)
+			throw new RuntimeException ("Kucna hemija ne sme biti null");	
 		
-		
-        if (kucneHemije.contains(kucnaHemija))
+		else if (kucneHemije.contains(kucnaHemija))
 			kucnaHemija.setKolicina(kucnaHemija.getKolicina() + 1);
 		
 		else kucneHemije.add(kucnaHemija);
@@ -61,7 +66,6 @@ public class RadSaArtiklima implements MagacinInterfejs {
 			throw new RuntimeException ("Knjiga je vec izbacena iz sistema");
 		
 		else knjiga.setKolicina(knjiga.getKolicina() - 1);
-
 
 	}
 
