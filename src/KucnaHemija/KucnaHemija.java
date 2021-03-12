@@ -98,8 +98,8 @@ public class KucnaHemija {
 	}
 	@Override
 	public String toString() {
-		return "KucnaHemija [naziv=" + naziv + ", sifra=" + sifra + ", opis=" + opis + ", kolicina=" + kolicina
-				+ ", roktrajanja=" + roktrajanja + "]";
+		return "Kucna hemija - naziv:" + naziv + ", sifra:" + sifra + ", opis:" + opis + ", kolicina:" + kolicina
+				+ ", roktrajanja=" + roktrajanja;
 	}
 	
 	

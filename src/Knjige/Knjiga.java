@@ -78,7 +78,7 @@ public class Knjiga {
 	}
 	@Override
 	public String toString() {
-		return "Knjiga [naziv=" + naziv + ", sifra=" + sifra + ", opis=" + opis + ", kolicina=" + kolicina + "]";
+		return "Knjiga - naziv:" + naziv + ", sifra:" + sifra + ", opis:" + opis + ", kolicina:" + kolicina;
 	}
 	
 	

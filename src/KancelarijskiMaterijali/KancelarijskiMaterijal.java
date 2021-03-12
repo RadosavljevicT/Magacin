@@ -76,8 +76,8 @@ public class KancelarijskiMaterijal {
 	}
 	@Override
 	public String toString() {
-		return "KancelarijskiMaterijal [naziv=" + naziv + ", sifra=" + sifra + ", opis=" + opis + ", kolicina="
-				+ kolicina + "]";
+		return "Kancelarijski materijal - naziv:" + naziv + ", sifra:" + sifra + ", opis:" + opis + ", kolicina:"
+				+ kolicina ;
 	}
 	
 	
